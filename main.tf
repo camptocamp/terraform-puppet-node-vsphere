@@ -149,7 +149,7 @@ resource "vsphere_virtual_machine" "puppet-node" {
   }
 
   lifecycle {
-    ignore_changes = ["cdrom"]
+    ignore_changes = ["cdrom", "vapp"]
   }
 }
 
